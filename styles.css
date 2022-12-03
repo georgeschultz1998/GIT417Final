@@ -20,7 +20,7 @@ time, mark, audio, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
-	font-size: 20px;
+	font-size: 12px;
 	font: inherit;
 	vertical-align: baseline;
 }
@@ -31,6 +31,7 @@ footer, header, hgroup, menu, nav, section {
 }
 body {
 	line-height: 1;
+	font-size: 25px;
 }
 ol, ul {
 	list-style: none;
@@ -54,27 +55,33 @@ table {
 /*Start of code used on multiple pages*/
 #maindiv {
 	width: 1280px;
-	height: 7000px;
-	background-color: white;
+	height: 4500px;
 	margin: 0 auto;
-	color: black;
+	color: white;
 	font-family: Arial, Helvetica, sans-serif;
+	background: dodgerblue;
+}
+.dividerimg{
+	width: 1280px;
+	margin: 0;
+	padding: 0;
 }
 
 h1	{
-	font-size: 60px;
+	font-size: 30px;
 	text-align: center;
 	padding: 24px;
 }
 
 h2	{
-	font-size: 60px;
-	padding: 24px;
+	font-size: 30px;
+	padding: 20px;
+	padding-bottom: 0px;
 	text-align: center;
 }
 
 h3	{
-	font-size: 60px;
+	font-size: 30px;
 	padding: 24px;
 }
 
@@ -98,35 +105,44 @@ p	{
 #navdiv	{
 	width: 1280px;
 	height: 100px;
-	background-color: #2994ed;
+	background-color: dodgerblue;
 	padding-top: 50px;
+	display: block;
+	margin: 0 auto;
 	align-content: center;
-
-}
-
-nav li {
-	background-color: #2994ed;
-	border: 1px solid white;	
-	padding:30px;
-	display: inline-block;
 	text-align: center;
+}
+
+#navdiv li {
+	color: dodgerblue;
+	background-color: white;
+	width: 200px;
+	padding:30px;
+
+	border: 3px solid black;
+	display: inline-block;
 
 }
 
-nav a {
-	color: white!important;
+#navdiv a {
+	color: dodgerblue;
 	font-size: 30px;
 	display: inline-block;
+	text-decoration: none;
 }
 
-a:hover {
-	color: blue!important;
+#navdiv a:hover {
+	color: black;
 }
 
 #current a {
 	color: #00f!important;
 	text-decoration: underline!important;
 }
+.dividerimg{
+	grid-area: div;
+}
+
 /*End of nav code*/
 
 
@@ -135,8 +151,8 @@ a:hover {
 #headerdiv
 {
 	width: 1280px;
-	height: 500px;
-	background-color: white;
+	height: 300px;
+	background-color: dodgerblue;
 	font-size: 30px;
 	padding-top: 3%;
 	align-content: center;
@@ -145,7 +161,7 @@ a:hover {
 #headerdiv a	{
 	width: 1280px;
 	color: white;
-	background-color: #2994ed;
+	background-color: dodgerblue;
 	padding-top: 33px;
 	padding-bottom: 24px;
 	text-decoration: none;
@@ -159,24 +175,72 @@ a:hover {
 
 #headerimg 
 {
-	padding-top: 10px;
-	padding-bottom: 10px;
+	padding-top: 0px;
+	padding-bottom: 0px;
 	width: 1280px;
 	height: auto;
+	display: inline-block;
+	text-align: center;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
 }
 /*End of header code*/
 
+/*Start of map code*/
+#mapdiv{
+	display: grid;
+	grid-template-areas:
+		'div div'
+		'h2 h2'
+		'map entrance'
+}
+
+#mapdiv h2:first-child{
+	padding-top: 20px;
+	grid-area: h2;
+}
+
+#mapdiv h2:last-child{
+	padding-top: 20px;
+	grid-area: h2;
+}
+
+#mapimg{
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 500px;
+	display: block;
+	text-align: center;
+	align-content: center;
+	border: black 3px solid;
+	grid-area: map;
+}
+
+#entranceimg{
+	margin: 0 auto;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	height: 500px;
+	display: block;
+	text-align: center;
+	align-content: center;
+	border: black 3px solid;
+	grid-area: entrance;
+}
+/*End of map code*/
+
 /*Start of footer code*/
 footer{
+	margin-top: 20px;
 	width: 1280px;
-	background-color: #2994ed;
+	background-color: dodgerblue;
 	color: white;
 	padding-top: 6px;
 	padding-bottom: 6px;
-	padding-left: 6px;
 	bottom:0;
 	left:0;
-	font-size: 30px;
+	font-size: 20px;
 }
 
 footer p{
@@ -192,18 +256,72 @@ footer p{
 
 
 
+/*Start of code for Units*/
 
-/*Start of code for home*/
+#unitsdiv{
+	display: grid;
+	grid-template-areas:
+		'div div'
+	'h2 h2'
+			'img aptdiv'
+			'nav nav';
+}
+
+#unitsdiv h2{
+	padding-top: 20px;
+	grid-area: h2;
+}
 
 
-/*End of code for home*/
+#apartmentimg{
+	width: 800px;
+	padding: 20px;
+	display: block;
+	grid-area: img;
 
-/*Start of code for Payments*/
+}
 
-/*End of code for Payments*/
+#aptdiv{
+	width: 400px;
+	padding: 10px;
+	display: block;
+	grid-area: aptdiv;
+}
 
-/*Start of code for Maintanence*/
-/*End of code for Maintanence*/
+#navunit {
+	width: 1080px;
+	height: 100px;
+	background-color: dodgerblue;
+	padding: 20px;
+	padding-left: 100px;
+	padding-right: 100px;
+	grid-area: nav;
+}
+
+#navunit li {
+	color: dodgerblue;
+	background-color: white;
+	width: 150px;
+	padding:30px;
+	border-top: 3px solid black;
+	border-bottom: 3px solid black;
+	display: inline-block;
+	text-align: center;
+
+}
+
+#navunit a {
+	color: dodgerblue;
+	font-size: 30px;
+	display: inline-block;
+	text-decoration: none;
+}
+
+#navunit a:hover {
+	color: black;
+}
+
+/*End of code for Units*/
 
 /*Start of code for Contact Us*/
 /*Start of form code*/
@@ -216,7 +334,7 @@ form {
 	width: 700px;
 	height: 1600px;
 	color: white;
-	background-color: #2994ed;
+	background-color: dodgerblue;
 	border: 3px solid blue;
 	margin: 0 auto;
 	border-radius: 10px;

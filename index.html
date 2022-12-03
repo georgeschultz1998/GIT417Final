@@ -6,7 +6,8 @@
       <meta name="author" content="Anthony Schultz">
       <meta name="description" content="Apartments in downtown Canton, NC">
       <link href="styles.css" rel="stylesheet">
-      <link rel="icon" href="favicon.ico" type="image/x-icon">
+      <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+      <script src="myscripts.js"></script>
    </head>
    <body>
       <div id="maindiv">
@@ -14,43 +15,68 @@
             <div id="navdiv">
                <nav>
                   <ul>
-                     <li id="current"><a href="index.html" class="active-page">Home</a></li>
+                     <li id="current"><a href="index.html" class="active-page">HOME</a></li>
                      <li><a href="#mapdiv">MAP</a></li>
-                     <li><a href="#apartmentsdiv">AVAILABLE UNITS</a></li>
+                     <li><a href="#unitsdiv">UNITS</a></li>
                      <li><a href="#contactdiv">CONTACT US</a></li>
                   </ul>
                </nav>
          </div>
             <div id="headerdiv">
-               <a href="index.html">Mears Avenue Apartments</a>
+               <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
+               <h2>Mears Avenue Apartments</h2>
                <br>
-               <img src="header-img.png" alt="Image of apartment" class="headerimg">
+               <img src="images/header-img.png" alt="Image of apartment" id="headerimg">
                <br>
-               <p>Address: 40-58 mears avenue, Canton, NC 28716</p>
             </div>
 
             <div id="mapdiv">
-               <img src="divider.png" alt="Image of of division line" class="dividerrimg">
+               <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
                <h2>Map Of Apartments</h2>
-               <img src="images/apartmentMap.png" alt="map of apartment" class="headerimg">
+               <img src="images/apartmentMap.png" alt="map of apartment" id="mapimg">
+               <h2>Entrance / Parking Lot</h2>
+               <img src="images/apartmentEntrance.png" alt="map of apartment" id="entranceimg">
             </div>
 
 
-            <div id="apartmentsdiv">
-               <img src="divider.png" alt="Image of of division line" class="dividerrimg">
-               <h2>AVAILABLE UNITS</h2>
-               <div class="buttondiv"><button type="button" onclick="alert('This button does not do anything yet.')">Lease Agreement</button></div>
-            </div>
+            <div id="unitsdiv">
+               <button id="clickme">APT5</button>
+               <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
+               <h2>Units Available</h2>
+               <div id = aptdiv>
+                  <h3>Apartment Details</h3>
+                  <p id = "desc">Upstairs studio apartment</p>
+                  <p id = "rent">Rent - $950</p>
+                  <p id = "bed">Studio</p>
+                  <p id = "bath">1 Bathroom</p>
+                  <p id = "sqft">600 sqft</p>
+                  <p id = "pet">Pets under 25 pounds OK</p>
+                  <p id = "avail">Availability - Occupied</p>
 
-            <img src="divider.png" alt="Image of of division line" class="dividerrimg">
+               </div>
+               <img src="images/apartment5.png" alt="images of apartment" id="apartmentimg">
+               <div id="navunit">
+                  <nav>
+                     <ul>
+                        <li><a id="APT5" href="#aptdiv">APT 5</a></li>
+                        <li><a id="APT6" href="#aptdiv">APT 6</a></li>
+                        <li><a id="APT8" href="#aptdiv">APT 8</a></li>
+                        <li><a id="APT14" href="#aptdiv">APT 14</a></li>
+                        <li><a id="APT15" href="#aptdiv">APT 15</a></li>
+                        <span id="random1"></span>
+
+                     </ul>
+                  </nav>
+               </div>
+            </div>
 
 
             <div id="contactdiv">
-               <img src="divider.png" alt="Image of of division line" class="dividerrimg">
+               <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
                <h2>Contact Us</h2>
                <p>Email: mearsavenueapartments@gmail.com</p>
-               <p>Phone: (925)-525-0251 </p>
-               <p>Or use contact form below</p>
+               <p>Call/Text: (925)-525-0251 </p>
+               <p>Or Use Contact Form Below</p>
                <div id="formdiv">
                   <form id="contact" method="post" action="https://wp.zybooks.com/form-viewer.php">
                      <label for="myName">Name*</label>
@@ -139,9 +165,9 @@
          <footer>
             <p>Mears Avenue Apartments</p>
             <p>(925)-525-0251</p>
-            <p>mearsavenueapartments@gmail.com</p>
-            <p>40-58 mears avenue, Canton, NC 28716</p>
-            <p>Copyright © 2021 - All Rights Reserved.</p>
+            <p>MearsAvenueApartments@gmail.com</p>
+            <p>40 Mears Avenue, Canton, NC 28716</p>
+            <p>Copyright © 2022 - All Rights Reserved.</p>
          </footer>
       </div>
    </body>
