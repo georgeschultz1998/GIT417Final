@@ -1,22 +1,90 @@
 /*Begin of reset code*/
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -24,30 +92,50 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
 	display: block;
 }
+
 body {
 	line-height: 1;
 	font-size: 25px;
 }
-ol, ul {
+
+ol,
+ul {
 	list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
 	quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
 	content: '';
 	content: none;
 }
+
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+
 /*End of reset code*/
 
 /*Start of websitee code*/
@@ -55,46 +143,81 @@ table {
 /*Start of code used on multiple pages*/
 #maindiv {
 	width: 1280px;
-	height: 4500px;
+	height: 4300px;
 	margin: 0 auto;
 	color: white;
 	font-family: Arial, Helvetica, sans-serif;
-	background: dodgerblue;
+	background: darkblue;
 }
-.dividerimg{
+
+.dividerimg {
 	width: 1280px;
 	margin: 0;
 	padding: 0;
 }
 
-h1	{
+h1 {
 	font-size: 30px;
 	text-align: center;
 	padding: 24px;
 }
 
-h2	{
+h2 {
 	font-size: 30px;
 	padding: 20px;
 	padding-bottom: 0px;
 	text-align: center;
 }
 
-h3	{
+h3 {
 	font-size: 30px;
 	padding: 24px;
 }
 
-p	{
+p {
 	padding: 24px;
 }
 
 /*Start of nav code*/
 
-#navdiv	{
+#colorButton {
+	width: 150px;
+	height: 130px;
+	float: right;
+	margin: 5px;
+	margin-top: 20px;
+	padding: 0px;
+
+}
+
+#colorImg {
+	width: 130px;
+	height: 120px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#colorButton2 {
+	width: 150px;
+	height: 130px;
+	float: right;
+	margin: 5px;
+	margin-top: 20px;
+	padding: 0px;
+
+}
+
+#colorImg2 {
+	width: 130px;
+	height: 120px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#navdiv {
 	width: 1280px;
 	height: 100px;
-	background-color: dodgerblue;
+	background-color: darkblue;
 	padding-top: 50px;
 	display: block;
 	margin: 0 auto;
@@ -103,10 +226,10 @@ p	{
 }
 
 #navdiv li {
-	color: dodgerblue;
+	color: darkblue;
 	background-color: white;
-	width: 200px;
-	padding:30px;
+	width: 160px;
+	padding: 30px;
 
 	border: 3px solid black;
 	display: inline-block;
@@ -114,8 +237,8 @@ p	{
 }
 
 #navdiv a {
-	color: dodgerblue;
-	font-size: 30px;
+	color: darkblue;
+	font-size: 24px;
 	display: inline-block;
 	text-decoration: none;
 }
@@ -124,11 +247,7 @@ p	{
 	color: black;
 }
 
-#current a {
-	color: #00f!important;
-	text-decoration: underline!important;
-}
-.dividerimg{
+.dividerimg {
 	grid-area: div;
 }
 
@@ -137,20 +256,19 @@ p	{
 
 /*Start of header code*/
 
-#headerdiv
-{
+#headerdiv {
 	width: 1280px;
 	height: 300px;
-	background-color: dodgerblue;
+	background-color: darkblue;
 	font-size: 30px;
 	padding-top: 3%;
 	align-content: center;
 }
 
-#headerdiv a	{
+#headerdiv a {
 	width: 1280px;
 	color: white;
-	background-color: dodgerblue;
+	background-color: darkblue;
 	padding-top: 33px;
 	padding-bottom: 24px;
 	text-decoration: none;
@@ -162,8 +280,7 @@ p	{
 }
 
 
-#headerimg 
-{
+#headerimg {
 	padding-top: 0px;
 	padding-bottom: 0px;
 	width: 1280px;
@@ -173,10 +290,11 @@ p	{
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
 }
+
 /*End of header code*/
 
 /*Start of map code*/
-#mapdiv{
+#mapdiv {
 	display: grid;
 	grid-template-areas:
 		'div div'
@@ -184,17 +302,17 @@ p	{
 		'map entrance'
 }
 
-#mapdiv h2:first-child{
+#mapdiv h2:first-child {
 	padding-top: 20px;
 	grid-area: h2;
 }
 
-#mapdiv h2:last-child{
+#mapdiv h2:last-child {
 	padding-top: 20px;
 	grid-area: h2;
 }
 
-#mapimg{
+#mapimg {
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -206,7 +324,7 @@ p	{
 	grid-area: map;
 }
 
-#entranceimg{
+#entranceimg {
 	margin: 0 auto;
 	margin-top: 20px;
 	margin-bottom: 20px;
@@ -217,60 +335,56 @@ p	{
 	border: black 3px solid;
 	grid-area: entrance;
 }
+
 /*End of map code*/
 
 /*Start of footer code*/
-footer{
+footer {
 	margin-top: 20px;
 	width: 1280px;
-	background-color: dodgerblue;
-	color: white;
 	padding-top: 6px;
 	padding-bottom: 6px;
-	bottom:0;
-	left:0;
+	bottom: 0;
+	left: 0;
 	font-size: 20px;
 }
 
-footer p{
+footer p {
 	padding: 6px;
 }
 
-#current	{
-	background-color: white;
-}
 /*End of footer code*/
 
 /*End of code used on multiple pages*/
 
 
-
 /*Start of code for Units*/
 
-#unitsdiv{
+#unitsdiv {
 	display: grid;
 	grid-template-areas:
 		'div div'
-	'h2 h2'
-			'img aptdiv'
-			'nav nav';
+		'h2 h2'
+		'img aptdiv'
+		'nav nav';
 }
 
-#unitsdiv h2{
+#unitsdiv h2 {
 	padding-top: 20px;
 	grid-area: h2;
 }
 
 
-#apartmentimg{
+#apartmentimg {
 	width: 800px;
+	height: 600px;
 	padding: 20px;
 	display: block;
 	grid-area: img;
 
 }
 
-#aptdiv{
+#aptdiv {
 	width: 400px;
 	padding: 10px;
 	display: block;
@@ -280,7 +394,6 @@ footer p{
 #navunit {
 	width: 1080px;
 	height: 100px;
-	background-color: dodgerblue;
 	padding: 20px;
 	padding-left: 100px;
 	padding-right: 100px;
@@ -288,10 +401,10 @@ footer p{
 }
 
 #navunit li {
-	color: dodgerblue;
+	color: darkblue;
 	background-color: white;
 	width: 150px;
-	padding:30px;
+	padding: 30px;
 	border-top: 3px solid black;
 	border-bottom: 3px solid black;
 	display: inline-block;
@@ -300,7 +413,7 @@ footer p{
 }
 
 #navunit a {
-	color: dodgerblue;
+	color: darkblue;
 	font-size: 30px;
 	display: inline-block;
 	text-decoration: none;
@@ -314,25 +427,14 @@ footer p{
 
 /*Start of code for Contact Us*/
 /*Start of form code*/
-#formdiv{
+#formdiv {
 	padding-top: 12px;
 }
 
 form {
-	font-size: 30px;
-	width: 700px;
-	height: 1600px;
-	color: white;
-	background-color: dodgerblue;
-	border: 3px solid blue;
-	margin: 0 auto;
-	border-radius: 10px;
-	padding:24px;
+	margin-left: 300px;
 }
 
-label {
-	color: white;
-}
 
 input {
 	display: block;
@@ -361,7 +463,7 @@ fieldset {
 }
 
 form legend {
-	color: #fff;
+	color: white;
 }
 
 #myState {
