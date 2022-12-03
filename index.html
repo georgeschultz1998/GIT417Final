@@ -7,10 +7,10 @@
       <meta name="description" content="Apartments in downtown Canton, NC">
       <link href="styles.css" rel="stylesheet">
       <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-      <script src="myscripts.js"></script>
    </head>
    <body>
-      <div id="maindiv">
+   <script src="myscripts.js"></script>
+   <div id="maindiv">
          <main>
             <div id="navdiv">
                <nav>
@@ -38,33 +38,31 @@
                <img src="images/apartmentEntrance.png" alt="map of apartment" id="entranceimg">
             </div>
 
-
             <div id="unitsdiv">
-               <button id="clickme">APT5</button>
+
+
                <img src="images/divider.png" alt="Image of of division line" class="dividerimg">
                <h2>Units Available</h2>
                <div id = aptdiv>
                   <h3>Apartment Details</h3>
-                  <p id = "desc">Upstairs studio apartment</p>
-                  <p id = "rent">Rent - $950</p>
+                  <p id = "desc">Upstairs Studio Apartment</p>
+                  <p id = "rent">Rent - $850</p>
                   <p id = "bed">Studio</p>
                   <p id = "bath">1 Bathroom</p>
                   <p id = "sqft">600 sqft</p>
-                  <p id = "pet">Pets under 25 pounds OK</p>
-                  <p id = "avail">Availability - Occupied</p>
+                  <p id = "pet">Under 25 pound pet OK</p>
+                  <p id = "avail">RENTED 09/22</p>
 
                </div>
-               <img src="images/apartment5.png" alt="images of apartment" id="apartmentimg">
+               <img src="images/Apartment5.png" alt="images of apartment" id="apartmentimg">
                <div id="navunit">
                   <nav>
                      <ul>
-                        <li><a id="APT5" href="#aptdiv">APT 5</a></li>
-                        <li><a id="APT6" href="#aptdiv">APT 6</a></li>
-                        <li><a id="APT8" href="#aptdiv">APT 8</a></li>
-                        <li><a id="APT14" href="#aptdiv">APT 14</a></li>
-                        <li><a id="APT15" href="#aptdiv">APT 15</a></li>
-                        <span id="random1"></span>
-
+                        <li><a id="APT5" onclick="updateApt5()" href="#aptdiv">APT 5</a></li>
+                        <li><a id="APT6" onclick="updateApt6()" href="#aptdiv">APT 6</a></li>
+                        <li><a id="APT8" onclick="updateApt8()" href="#aptdiv">APT 8</a></li>
+                        <li><a id="APT14" onclick="updateApt14()" href="#aptdiv">APT 14</a></li>
+                        <li><a id="APT15" onclick="updateApt15()" href="#aptdiv">APT 15</a></li>
                      </ul>
                   </nav>
                </div>
