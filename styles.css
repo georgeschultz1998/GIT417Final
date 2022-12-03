@@ -85,17 +85,6 @@ h3	{
 	padding: 24px;
 }
 
-button	{
-	width: 1268px;
-	height: 500px;
-	display: inline;
-	font-size: 30px;
-}
-
-.buttondiv	{
-	padding: 12px;
-}
-
 p	{
 	padding: 24px;
 }
@@ -403,12 +392,6 @@ textarea {
 	width: 340px;
 	height: 150px;
 	display: inline;
-	font-size: 30px;
-}
-
-#myButtons {
-	margin: 0 auto;
-	width: 1280px;
 	font-size: 30px;
 }
 
